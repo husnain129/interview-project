@@ -5,11 +5,10 @@ import Wheel from "./Wheel";
 const WheelContainer = ({ route, setRoute }) => {
   return (
     <VStack
-      gap="2em"
       w="full"
       alignItems={"center"}
-      justifyContent="center"
-      h="100vh"
+      justifyContent="space-around"
+      minH="100vh"
     >
       <Text fontSize={"2em"} fontWeight="bold">
         Shop the Job

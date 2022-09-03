@@ -21,8 +21,8 @@ const Wheel = ({ route, setRoute }) => {
         alignItems={"center"}
         justifyContent="center"
         position={"relative"}
-        w="415px"
-        h="415px"
+        w="410px"
+        h="410px"
         bg={"black"}
         borderRadius="full"
         border="10px solid lightgray"
