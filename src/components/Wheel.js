@@ -1,9 +1,11 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import IconPosition from "./utils/icon-position";
 
-const Wheel = () => {
+const Wheel = ({ route, setRoute }) => {
   const [selectedItem, setSelectedItem] = useState(IconPosition[0].icon);
+  const [cliecked, setCliecked] = useState(0);
 
   return (
     <Flex
@@ -51,14 +53,20 @@ const Wheel = () => {
               bg="linear-gradient(90deg, rgba(208,201,201,1) 0%, rgba(255,255,255,1) 100%)"
               shadow={"md"}
             >
-              <Text>{selectedItem}</Text>
+              <Link to={`/${route}`}>
+                <Box cursor={"pointer"}>{selectedItem}</Box>
+              </Link>
             </Flex>
           </Flex>
         </Flex>
         {IconPosition.map((item, index) => (
           <Flex
             cursor={"pointer"}
-            onClick={() => setSelectedItem(item.icon)}
+            onClick={() => {
+              setCliecked(() => cliecked + 1);
+              setRoute(item.path);
+              setSelectedItem(item.icon);
+            }}
             color={"white"}
             pos={"absolute"}
             key={index}

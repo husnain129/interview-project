@@ -2,7 +2,7 @@ import { Button, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import Wheel from "./Wheel";
 
-const WheelContainer = () => {
+const WheelContainer = ({ route, setRoute }) => {
   return (
     <VStack
       gap="2em"
@@ -14,7 +14,7 @@ const WheelContainer = () => {
       <Text fontSize={"2em"} fontWeight="bold">
         Shop the Job
       </Text>
-      <Wheel />
+      <Wheel route={route} setRoute={setRoute} />
       <Button
         px="20px"
         borderRadius={"full"}

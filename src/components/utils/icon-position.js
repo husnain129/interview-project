@@ -7,13 +7,14 @@ import { SiVlcmediaplayer } from "react-icons/si";
 const IconPosition = [
   {
     icon: <MdBathtub size={28} color="red" />,
+    path: "/",
     style: {
       top: "3%",
     },
   },
   {
     icon: <FaParachuteBox size={28} color="blue" />,
-
+    path: "bed",
     style: {
       top: "60px",
       right: "68px",
@@ -21,7 +22,7 @@ const IconPosition = [
   },
   {
     icon: <SiVlcmediaplayer size={28} color="orange" />,
-
+    path: "tv-show",
     style: {
       top: "40%",
       right: "15px",
@@ -29,7 +30,7 @@ const IconPosition = [
   },
   {
     icon: <GiTowel size={28} color="red" />,
-
+    path: "towel",
     style: {
       top: "70%",
       right: "40px",
@@ -37,14 +38,14 @@ const IconPosition = [
   },
   {
     icon: <BsFillPhoneFill size={28} color="skyblue" />,
-
+    path: "phone",
     style: {
       bottom: "4%",
     },
   },
   {
     icon: <FaTshirt size={28} color="orange" />,
-
+    path: "t-shirt",
     style: {
       top: "150px",
       left: "20px",
@@ -52,7 +53,7 @@ const IconPosition = [
   },
   {
     icon: <IoIosBed size={28} />,
-
+    path: "bed-show",
     style: {
       top: "50px",
       left: "75px",
@@ -60,7 +61,7 @@ const IconPosition = [
   },
   {
     icon: <GiDoorHandle size={28} />,
-
+    path: "door-lock",
     style: {
       top: "70%",
       left: "45px",
